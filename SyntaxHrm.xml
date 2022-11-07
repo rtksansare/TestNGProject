@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="practice.ListenerClass"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/rrajendrasansare/IdeaProjects/TestNGProject/src/test/java/practice" parallel="methods" thread-count="2">
+        <groups>
+            <run>
+                <include name="regression"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="practice.SyntaxHrm"></class>
+        </classes>
+    </test>
+</suite>
